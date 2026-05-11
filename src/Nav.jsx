@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { GithubIcon, LinkedinIcon } from './Icons';
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -24,8 +24,12 @@ const Nav = () => {
             <a href="#beyond" className="hover:text-blue-400 transition-colors">/Beyond</a>
           </div>
           <div className="flex gap-5">
-            {/* <Linkedin className="w-5 h-5 opacity-40 hover:opacity-100 cursor-pointer transition-all hover:text-blue-400" /> */}
-            {/* <Github className="w-5 h-5 opacity-40 hover:opacity-100 cursor-pointer transition-all hover:text-white" /> */}
+            <a href="https://www.linkedin.com/in/william-couturiaux" target="_blank" rel="noopener noreferrer">
+              <LinkedinIcon className="w-5 h-5 opacity-40 hover:opacity-100 cursor-pointer transition-all hover:text-blue-400" />
+            </a>
+            <a href="https://github.com/wcouturiaux" target="_blank" rel="noopener noreferrer">
+              <GithubIcon className="w-5 h-5 opacity-40 hover:opacity-100 cursor-pointer transition-all hover:text-white" />
+            </a>
           </div>
         </div>
       </div>

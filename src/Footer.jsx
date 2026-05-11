@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-
+import { GithubIcon, LinkedinIcon } from './Icons';
 const Footer = () => {
 
   return (
@@ -11,8 +11,12 @@ const Footer = () => {
             Obsidian Terminal // System Status: Synchronized // Mission Critical Architecture // Columbus, OH
           </p>
           <div className="flex gap-16">
-            {/* <Linkedin className="w-8 h-8 text-white/20 hover:text-blue-400 cursor-pointer transition-all" />
-              <Github className="w-8 h-8 text-white/20 hover:text-white cursor-pointer transition-all" /> */}
+            <a href="https://www.linkedin.com/in/william-couturiaux" target="_blank" rel="noopener noreferrer">
+              <LinkedinIcon className="w-8 h-8 text-white/20 hover:text-blue-400 cursor-pointer transition-all" />
+            </a>
+            <a href="https://github.com/wcouturiaux" target="_blank" rel="noopener noreferrer">
+              <GithubIcon className="w-8 h-8 text-white/20 hover:text-white cursor-pointer transition-all" />
+            </a>
             <ExternalLink className="w-8 h-8 text-white/20 hover:text-purple-400 cursor-pointer transition-all" />
           </div>
           <p className="text-[9px] uppercase tracking-[0.8em] text-white/10 mt-20 font-bold">
