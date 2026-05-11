@@ -14,7 +14,7 @@ export const projects = [
     problem: "Export-control regulations created a 'data wall' during a plant shutdown costing $20k/minute, preventing international partners from accessing critical systems.",
     action: "Navigated GM’s internal silos to secure a compliant SharePoint server for data hosting. Re-architected the WPF data layer and re-routed authorization logic within a 36-hour sprint.",
     result: "Ended the shutdown and established a new blueprint for secure, cross-border engineering collaboration.",
-    tags: ["C#", ".NET Core", "WPF", "Infra MacGyvering"],
+    tags: ["C#", ".NET Core", "WPF"],
     cardColor: "red-500"
   },
   {
@@ -29,12 +29,12 @@ export const projects = [
   },
   {
     title: "The Efficiency Expert",
-    company: "Fiat Chrysler (Stellantis)",
+    company: "General Motors",
     headline: "8min to <1min: Part Number Extraction",
     problem: "Manual ECU part number extraction was a multi-day process, taking over 8 minutes per vehicle scan with significant error risk.",
     action: "Automated the extraction workflow using Python and Selenium, bypassing legacy system API limitations.",
     result: "Reclaimed 2+ hours per day during release cycles and eliminated manual configuration errors.",
-    tags: ["Python", "Selenium", "MATLAB", "Automation"],
+    tags: ["Python", "Selenium", "Automation"],
     cardColor: "green-500"
   }
 ];
@@ -42,14 +42,14 @@ export const projects = [
 export const skillClusters = [
   {
     title: "AI-Augmented Stack",
-    skills: ["AI-Assisted Pair Programming", "Cursor / Copilot Proficiency", "Automated Refactoring Workflows", "100% Test Coverage Automation"]
+    skills: ["AI-Assisted Pair Programming", "Antigravity / Copilot Proficiency", "Automated Refactoring Workflows", "Test Coverage Automation"]
   },
   {
     title: "Core Engineering",
-    skills: ["Java / Spring Boot", "Python", "C# / .NET Core", "React", "Angular", "TypeScript"]
+    skills: ["Java / Spring Boot", "React", "Python", "Angular", "TypeScript", "C# / .NET Core"]
   },
   {
     title: "Infrastructure & Stability",
-    skills: ["AWS (S3, RDS)", "CI/CD (SonarQube)", "SQL / NoSQL Optimization", "Secure Coding (DevSecOps)"]
+    skills: ["AWS (S3, RDS)", "Static Analysis & Quality Gates", "MySQL/Oracle/PostgreSQL", "Security-Conscious Development"]
   }
 ];
