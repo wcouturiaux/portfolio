@@ -32,7 +32,7 @@ const Hero = () => {
               William L.<br />Couturiaux
             </h1>
             {hoveredName && (
-              <div className="absolute -top-12 left-0 font-mono text-xs text-blue-500 animate-pulse font-bold">
+              <div className="absolute -top-10 left-0 font-mono text-xs text-blue-500 animate-pulse font-bold">
                 {`> sudo execute --systems_first_engineering`}
               </div>
             )}
