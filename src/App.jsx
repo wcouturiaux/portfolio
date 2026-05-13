@@ -5,6 +5,7 @@ import Impact from './Impact';
 import Projects from './Projects';
 import Stack from './Stack';
 import Beyond from './Beyond';
+import AiAgent from './AiAgent';
 
 /**
  * Obsidian Terminal v5.0
@@ -26,6 +27,7 @@ const App = () => {
       <Projects />
       <Stack />
       <Beyond />
+      <AiAgent />
       <Footer />
     </div>
   );
