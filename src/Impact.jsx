@@ -2,7 +2,7 @@ import { metrics } from './constants';
 
 const Impact = () => {
   return (
-    <section className="py-24 border-y border-white/5 bg-gradient-to-b from-white/[0.02] to-transparent text-white">
+    <section id="impact" className="py-24 border-y border-white/5 bg-gradient-to-b from-white/[0.02] to-transparent text-white">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           {metrics.map((m, i) => (

@@ -7,10 +7,10 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 text-white">
       <div className="absolute inset-0 flex opacity-10 pointer-events-none text-[9px] font-mono leading-tight select-none italic">
         <div className="w-1/2 p-12 border-r border-white/5 overflow-hidden text-blue-500/50">
-          {Array(3).fill(`@Service\npublic class PurgeEngine {\n  // Industrial Efficiency Applied to Code\n  public void executePurge() {\n    return purgeRepository.cleanupMillions();\n  }\n}`).join('\n\n')}
+          {new Array(3).fill(`@Service\npublic class PurgeEngine {\n  // Industrial Efficiency Applied to Code\n  public void executePurge() {\n    return purgeRepository.cleanupMillions();\n  }\n}`).join('\n\n')}
         </div>
         <div className="w-1/2 p-12 overflow-hidden text-purple-500/50">
-          {Array(3).fill(`const Dashboard = () => {\n  const metrics = useMetrics$();\n  // Throughput Optimized State\n  return metrics.map(m => <Card data={m} />);\n}`).join('\n\n')}
+          {new Array(3).fill(`const Dashboard = () => {\n  const metrics = useMetrics$();\n  // Throughput Optimized State\n  return metrics.map(m => <Card data={m} />);\n}`).join('\n\n')}
         </div>
       </div>
 
@@ -32,7 +32,10 @@ const Hero = () => {
               William L.<br />Couturiaux
             </h1>
             {hoveredName && (
-              <div className="absolute -top-10 left-0 font-mono text-xs text-blue-500 animate-pulse font-bold">
+              <div 
+                className="absolute -top-10 left-0 font-mono text-xs text-blue-500 animate-pulse font-bold"
+                aria-hidden="true"
+              >
                 {`> sudo execute --systems_first_engineering`}
               </div>
             )}
@@ -48,10 +51,13 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-6">
-            <button className="group relative px-10 py-4 font-bold overflow-hidden rounded bg-white text-black transition-all hover:bg-white/90 shadow-[4px_4px_0px_rgba(59,130,246,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none skew-x-[-10deg]">
+            <button
+              onClick={() => document.getElementById("impact")?.scrollIntoView({ behavior: "smooth" })}
+              className="group relative px-10 py-4 font-bold overflow-hidden rounded bg-white text-black transition-all hover:bg-white/90 shadow-[4px_4px_0px_rgba(59,130,246,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none skew-x-[-10deg]"
+            >
               <span className="relative z-10 block skew-x-[10deg]">VIEW IMPACT</span>
             </button>
-            <button className="px-10 py-4 font-mono text-xs tracking-widest border border-white/10 rounded hover:bg-white/[0.03] transition-all uppercase font-bold text-white">
+            <button disabled className="px-10 py-4 font-mono text-xs tracking-widest border border-white/10 rounded hover:bg-white/[0.03] transition-all uppercase font-bold text-white">
               Read My Story
             </button>
           </div>
