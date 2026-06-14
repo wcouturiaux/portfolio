@@ -57,7 +57,7 @@ const Hero = () => {
             >
               <span className="relative z-10 block skew-x-[10deg]">VIEW IMPACT</span>
             </button>
-            <button disabled className="px-10 py-4 font-mono text-xs tracking-widest border border-white/10 rounded hover:bg-white/[0.03] transition-all uppercase font-bold text-white">
+            <button disabled className="disabled:opacity-50 disabled:pointer-events-none px-10 py-4 font-mono text-xs tracking-widest border border-white/10 rounded hover:bg-white/[0.03] transition-all uppercase font-bold text-white">
               Read My Story
             </button>
           </div>
