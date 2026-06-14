@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Stack from './Stack';
 import Beyond from './Beyond';
 import AiAgent from './AiAgent';
+import { Analytics } from '@vercel/analytics/react'
 
 /**
  * Obsidian Terminal v5.0
@@ -29,6 +30,7 @@ const App = () => {
       <Beyond />
       <AiAgent />
       <Footer />
+      <Analytics/>
     </div>
   );
 };
