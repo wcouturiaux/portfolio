@@ -4,7 +4,7 @@ export const metrics = [
   { label: '1,600+', sub: 'Eng Hours Saved', icon: <Clock className="text-purple-500" /> },
   { label: '85%', sub: 'Load Time Reduction', icon: <Activity className="text-blue-500" /> },
   { label: '$20K/Min', sub: 'Saved during GM shutdown', icon: <Zap className="text-red-500" /> },
-  { label: '3,500+', sub: 'Positions Automated', icon: <Database className="text-green-500" /> }
+  { label: '5,000+', sub: 'Positions Automated', icon: <Database className="text-green-500" /> }
 ];
 
 export const projects = [
@@ -41,8 +41,8 @@ export const projects = [
   {
     title: "Data Integrity & Scale",
     company: "JPMorgan Chase Asset & Wealth Management",
-    headline: "Automating 3,500+ Daily Positions Across 71 Accounts",
-    problem: "Teams manually reconciled 71 distinct accounts and sifted through nearly 3,500 records daily to catch position breaks.",
+    headline: "Automating 5,000+ Daily Positions Across 71 Accounts",
+    problem: "Teams manually reconciled 71 distinct accounts and sifted through nearly 5,000 records daily to catch position breaks.",
     action: "Engineered reconciliation workflow as part of a massive initiative to unify distributed financial records into a reliable source of truth.",
     result: "Automated massive manual tracking efforts, established high-precision data integrity, and ensured absolute transactional accuracy at scale.",
     tags: ["Java", "Spring Boot", "React", "Data Strategy"],
