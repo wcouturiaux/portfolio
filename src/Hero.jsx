@@ -1,5 +1,11 @@
 import { useState } from "react";
 import { Command } from "lucide-react";
+
+const HERO_BADGE_TEXT = "Architecting System Resilience";
+const HERO_TITLE = "Senior Software Engineer";
+const HERO_HOVER_COMMAND = "> sudo execute --pragmatic_engineering";
+const HERO_BIO = "Architecting resilient systems and uncompromising data integrity. I apply a pragmatic, systems-first approach to untangle complex data, eliminate technical friction, and keep fast-moving teams shipping value without breaking operations.";
+
 const Hero = () => {
   const [hoveredName, setHoveredName] = useState(false);
 
@@ -19,7 +25,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-white/[0.03] border-t border-l border-white/10 backdrop-blur-sm mb-10 group cursor-default skew-x-[-12deg]">
             <div className="skew-x-[12deg] flex items-center gap-2">
               <Command className="w-3 h-3 text-blue-500" />
-              <span className="text-[10px] font-mono uppercase tracking-[0.3em] opacity-60 font-bold">Architecting High-Scale Systems</span>
+              <span className="text-[10px] font-mono uppercase tracking-[0.3em] opacity-60 font-bold">{HERO_BADGE_TEXT}</span>
             </div>
           </div>
 
@@ -36,18 +42,17 @@ const Hero = () => {
                 className="absolute -top-10 left-0 font-mono text-xs text-blue-500 animate-pulse font-bold"
                 aria-hidden="true"
               >
-                {`> sudo execute --systems_first_engineering`}
+                {HERO_HOVER_COMMAND}
               </div>
             )}
           </div>
 
           <h2 className="text-xl md:text-3xl font-mono text-blue-400 mb-10 uppercase tracking-tighter italic skew-x-[-10deg] font-bold">
-            Senior Software Engineer
+            {HERO_TITLE}
           </h2>
 
           <p className="text-lg text-white/50 mb-12 max-w-xl leading-relaxed font-light">
-            Architecting mission-critical systems for enterprise scale.
-            Applying a <span className="text-white font-medium italic underline decoration-blue-500/50 underline-offset-4">Systems-First methodology</span> to eliminate technical debt and drive operational value.
+            {HERO_BIO}
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-6">
