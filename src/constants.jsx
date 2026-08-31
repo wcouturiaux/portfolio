@@ -1,40 +1,51 @@
-import { Zap, Users, Activity } from 'lucide-react';
+import { Zap, Database, Clock, Activity } from 'lucide-react';
 
 export const metrics = [
+  { label: '1,600+', sub: 'Eng Hours Saved', icon: <Clock className="text-purple-500" /> },
+  { label: '85%', sub: 'Load Time Reduction', icon: <Activity className="text-blue-500" /> },
   { label: '$20K/Min', sub: 'Saved during GM shutdown', icon: <Zap className="text-red-500" /> },
-  { label: '300K+', sub: 'Users at JPMC Scale', icon: <Users className="text-blue-500" /> },
-  { label: '83%', sub: 'API Overhead Reduction', icon: <Activity className="text-green-500" /> }
+  { label: '3,500+', sub: 'Positions Automated', icon: <Database className="text-green-500" /> }
 ];
 
 export const projects = [
   {
+    title: "System Resilience",
+    company: "General Motors",
+    headline: "Saving 1,600+ Hours via Zero-Downtime Mitigations",
+    problem: "An upstream dependency abruptly changed output formats, breaking system inputs and threatening a forced system rollback and redeployment.",
+    action: "Engineered and deployed a rapid intermediate data converter to keep operations live while natively refactoring the core architecture.",
+    result: "Averted a costly rollback, saved 1,600+ engineering hours in a single week, and protected the operational momentum of the business.",
+    tags: [".NET", "Python", "System Architecture", "Integration"],
+    cardColor: "purple-500"
+  },
+  {
+    title: "High-Scale Performance",
+    company: "JPMorgan Chase",
+    headline: "Cutting Reporting Load Times From 7s to Under 1s",
+    problem: "Legacy internal reporting workflows suffered from slow UI load times and database memory spikes due to heavy unmanaged record sets.",
+    action: "Designed a configuration-driven Spring Boot backend API and refactored frontend state handling to optimize data delivery and UI rendering.",
+    result: "Achieved an 85% reduction in page load times, drastically improving responsiveness for internal tool users at scale.",
+    tags: ["Java", "Spring Boot", "Angular", "Performance"],
+    cardColor: "blue-500"
+  },
+  {
     title: "The Crisis Resolver",
     company: "General Motors",
-    headline: "$28.8M Save: Bridging Global Silos",
-    problem: "Export-control regulations created a 'data wall' during a plant shutdown costing $20k/minute, preventing international partners from accessing critical systems.",
-    action: "Navigated GM’s internal silos to secure a compliant SharePoint server for data hosting. Re-architected the WPF data layer and re-routed authorization logic within a 36-hour sprint.",
+    headline: "$28.8M Save: Bridging Global Silos & Resolving Plant Shutdowns",
+    problem: "Regulatory 'data walls' during a $20k/minute plant shutdownblocked international engineering teams from accessing critical systems.",
+    action: "Rolled up my sleeves to navigate internal silos, secured a compliant data hosting environment, and re-engineered legacy layers to unblock cross-border collaboration.",
     result: "Ended the shutdown and established a new blueprint for secure, cross-border engineering collaboration.",
     tags: ["C#", ".NET Core", "WPF"],
     cardColor: "red-500"
   },
   {
-    title: "The Scale Architect",
-    company: "JPMorgan Chase",
-    headline: "7s to <1s: High-Velocity Data Management",
-    problem: "Legacy manager reporting workflows suffered from 7-second UI load times and RDS memory spikes due to massive, unmanaged record sets.",
-    action: "Designed a configuration-driven Spring Boot purge API and refactored RxJS observables to serve UI placeholders while photo APIs resolved.",
-    result: "Achieved an 85% reduction in load times for 60,000+ managers, scaling to a 300,000+ employee application.",
-    tags: ["Spring Boot", "Angular", "RxJS", "Data Strategy"],
-    cardColor: "blue-500"
-  },
-  {
-    title: "The Efficiency Expert",
-    company: "General Motors",
-    headline: "8min to <1min: Part Number Extraction",
-    problem: "Manual ECU part number extraction was a multi-day process, taking over 8 minutes per vehicle scan with significant error risk.",
-    action: "Automated the extraction workflow using Python and Selenium, bypassing legacy system API limitations.",
-    result: "Reclaimed 2+ hours per day during release cycles and eliminated manual configuration errors.",
-    tags: ["Python", "Selenium", "Automation"],
+    title: "Data Integrity & Scale",
+    company: "JPMorgan Chase Asset & Wealth Management",
+    headline: "Automating 3,500+ Daily Positions Across 71 Accounts",
+    problem: "Teams manually reconciled 71 distinct accounts and sifted through nearly 3,500 records daily to catch position breaks.",
+    action: "Engineered reconciliation workflow as part of a massive initiative to unify distributed financial records into a reliable source of truth.",
+    result: "Automated massive manual tracking efforts, established high-precision data integrity, and ensured absolute transactional accuracy at scale.",
+    tags: ["Java", "Spring Boot", "React", "Data Strategy"],
     cardColor: "green-500"
   }
 ];
