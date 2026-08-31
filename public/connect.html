@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>William L. Couturiaux | Senior Software Engineer</title>
+  <style>
+    /* Reset & Base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #111111;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 32px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      -webkit-font-smoothing: antialiased;
+    }
+    .mono {
+      font-family: "Courier New", Courier, monospace;
+    }
+    .accent {
+      color: #10c0df;
+    }
+    .accent-bg {
+      background-color: #10c0df;
+    }
+    
+    /* Header Section */
+    .header {
+      margin-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+    }
+    .profile-photo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 24px;
+      border: 2px solid rgba(16, 192, 223, 0.5);
+      box-shadow: 0 4px 16px rgba(16, 192, 223, 0.15);
+    }
+    .micro-copy {
+      font-size: 0.85rem;
+      color: #10c0df;
+      margin-bottom: 20px;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #a0a0a0;
+      margin-bottom: 24px;
+      line-height: 1.4;
+    }
+    .bio {
+      font-size: 1.05rem;
+      color: #cccccc;
+      line-height: 1.7;
+    }
+    
+    /* CTA Zone */
+    .cta-zone {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 54px; /* Ensured >48px tap target */
+      padding: 12px 24px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 2px solid transparent;
+      outline: none;
+      background: transparent;
+      color: inherit;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-primary {
+      background-color: #10c0df;
+      color: #050505;
+      border-color: #10c0df;
+      box-shadow: 0 4px 12px rgba(16, 192, 223, 0.2);
+    }
+    .btn-primary:active {
+      background-color: #0da6c2;
+      border-color: #0da6c2;
+      transform: scale(0.98);
+    }
+    .btn-secondary {
+      border-color: rgba(16, 192, 223, 0.5);
+      color: #10c0df;
+      background-color: rgba(16, 192, 223, 0.05);
+    }
+    .btn-secondary:active {
+      background-color: rgba(16, 192, 223, 0.15);
+      border-color: #10c0df;
+      transform: scale(0.98);
+    }
+    
+    /* The Proof */
+    .proof-section {
+      margin-bottom: 56px;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 12px;
+    }
+    .proof-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .proof-item {
+      background: #171717;
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 3px solid #10c0df;
+      font-size: 1rem;
+      line-height: 1.6;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .proof-item strong {
+      display: block;
+      color: #10c0df;
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+      letter-spacing: 0.3px;
+    }
+    
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 32px;
+      padding-bottom: 32px;
+      text-align: center;
+    }
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .tech-tag {
+      font-size: 0.85rem;
+      color: #999;
+      background: #1a1a1a;
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="/profile.webp" alt="William L. Couturiaux" class="profile-photo" />
+    <div class="mono micro-copy">&gt; sudo execute --eliminate_friction</div>
+    <h1>William L. Couturiaux</h1>
+    <h2 class="mono">Senior Software Engineer | Data Integrity & System Resilience</h2>
+    <p class="bio">
+      Architecting resilient systems and uncompromising data integrity. I apply a pragmatic, systems-first approach to untangle complex data, eliminate technical friction, and keep fast-moving teams shipping value without breaking operations.
+    </p>
+  </header>
+
+  <section class="cta-zone">
+    <!-- PLACEHOLDER: Replace 'base64_encoded_pdf_url_here' with the base64 encoded string of your PDF URL (e.g. btoa("https://example.com/resume.pdf")) -->
+    <button class="btn btn-primary" data-action="download-url" data-payload="base64_encoded_pdf_url_here">
+      Download Resume (PDF)
+    </button>
+    
+    <!-- LINKEDIN URL is pre-encoded to: https://www.linkedin.com/in/william-couturiaux/ -->
+    <button class="btn btn-secondary" data-action="open-url" data-payload="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3dpbGxpYW0tY291dHVyaWF1eC8=">
+      Connect on LinkedIn
+    </button>
+    
+    <!-- TWITTER URL is pre-encoded to: https://twitter.com/2willaddiction -->
+    <button class="btn btn-secondary" data-action="open-url" data-payload="aHR0cHM6Ly90d2l0dGVyLmNvbS8yd2lsbGFkZGljdGlvbg==">
+      Connect on Twitter/X
+    </button>
+    
+    <!-- PLACEHOLDER: Replace 'base64_encoded_vcard_data_here' with the base64 encoded string of your raw vCard text contents -->
+    <button class="btn btn-secondary" data-action="download-blob" data-filename="William_Couturiaux.vcf" data-mime="text/vcard" data-payload="base64_encoded_vcard_data_here">
+      Save Contact (vCard)
+    </button>
+    
+    <a href="/" class="btn" style="border-color: #333; color: #a0a0a0; margin-top: 8px;">
+      View Full Portfolio &rarr;
+    </a>
+  </section>
+
+  <section class="proof-section">
+    <h3 class="section-title mono">The Proof</h3>
+    <ul class="proof-list">
+      <li class="proof-item">
+        <strong>System Resilience (General Motors):</strong>
+        Engineered a rapid intermediate data converter to avert a cross-team rollback, saving <span class="mono accent">1,600+</span> engineering hours and protecting business momentum.
+      </li>
+      <li class="proof-item">
+        <strong>High-Scale Performance (JPMorgan Chase):</strong>
+        Designed a configuration-driven Spring Boot API and refactored frontend state handling to reduce internal reporting load times by <span class="mono accent">85%</span> (from 7s to &lt;1s).
+      </li>
+      <li class="proof-item">
+        <strong>Crisis Resolution (General Motors):</strong>
+        Navigated international silos and re-engineered legacy layers to unblock cross-border collaboration, resolving a <span class="mono accent">$20k/minute</span> global plant shutdown and yielding a <span class="mono accent">$28.8M</span> save.
+      </li>
+      <li class="proof-item">
+        <strong>Data Integrity (JPMorgan Chase):</strong>
+        Engineered core reconciliation workflows to automate the tracking of <span class="mono accent">71</span> distinct accounts and <span class="mono accent">3,500+</span> daily positions.
+      </li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <div class="tech-stack mono">
+      <span class="tech-tag">Java</span>
+      <span class="tech-tag">Spring Boot</span>
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">React</span>
+      <span class="tech-tag">C#/.NET Core</span>
+      <span class="tech-tag">AWS</span>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      // Helper function to safely decode Base64 strings, preserving UTF-8 formatting if present
+      function decodeBase64(str) {
+        try {
+          return decodeURIComponent(atob(str).split('').map(function(c) {
+              return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+          }).join(''));
+        } catch (e) {
+          try {
+            return atob(str); // Fallback for standard ASCII decoding
+          } catch(err) {
+            console.error("Invalid base64 payload");
+            return null;
+          }
+        }
+      }
+
+      document.addEventListener('click', function(e) {
+        const btn = e.target.closest('button[data-payload]');
+        if (!btn) return;
+        
+        const action = btn.getAttribute('data-action');
+        const payload = btn.getAttribute('data-payload');
+        
+        if (!payload || payload.includes('base64_encoded_')) {
+          alert('Please replace the placeholder base64 data in the HTML source before using.');
+          return;
+        }
+
+        const decoded = decodeBase64(payload);
+        if (!decoded) {
+          alert('Failed to decode data.');
+          return;
+        }
+
+        if (action === 'download-url') {
+          // Navigates/downloads standard URL paths dynamically
+          const a = document.createElement('a');
+          a.href = decoded;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.download = ''; 
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        } else if (action === 'open-url') {
+          // Open URL in new tab directly (e.g., LinkedIn)
+          window.open(decoded, '_blank', 'noopener,noreferrer');
+        } else if (action === 'download-blob') {
+          // Creates a dynamic Object URL for raw payloads (e.g., vCard string text)
+          const mimeType = btn.getAttribute('data-mime') || 'text/plain';
+          const filename = btn.getAttribute('data-filename') || 'download.txt';
+          
+          const blob = new Blob([decoded], { type: mimeType });
+          const blobUrl = URL.createObjectURL(blob);
+          
+          const a = document.createElement('a');
+          a.href = blobUrl;
+          a.download = filename;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          
+          // Cleanup memory allocation
+          setTimeout(() => URL.revokeObjectURL(blobUrl), 200);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
