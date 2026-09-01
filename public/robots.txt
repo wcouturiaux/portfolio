@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /02026-08-Couturiaux%20Sr%20Software%20Engineer.pdf
+Disallow: /connect.html
